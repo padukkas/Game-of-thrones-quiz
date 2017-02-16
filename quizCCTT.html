@@ -1,0 +1,31 @@
+<html>
+<title> Who is important to you? </title>
+<video playsinline muted autoplay loop id="bgvid">
+		    <source src="images/intro.mp4" type="video/mp4">
+		</video>
+<link href="about.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+
+<h1>Who is important to you?</h1>
+
+<br>
+<br>
+<br>
+<br>
+
+<select name="list" id="list" accesskey="target">
+    <option value="quizCCCT.html">Family</option>
+    <option value="quizCTTT.html">Friends</option>
+    <option value="quizCTTT.html">Yourself</option>
+        <option value="quizCCCT.html">Lover</option>
+<select>
+<input type=button value="Go" onclick="goToNewPage()" />
+</html>

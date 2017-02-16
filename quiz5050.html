@@ -1,0 +1,31 @@
+<html>
+<title> What is important? </title>
+<video playsinline muted autoplay loop id="bgvid">
+		    <source src="images/intro.mp4" type="video/mp4">
+		</video>
+<link href="about.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+
+<h1 id="test">What is most important to you?</h1>
+
+<br>
+<br>
+<br>
+<br>
+
+<select name="list" id="list" accesskey="target">
+    <option value="quizCCTT.html">Money</option>
+    <option value="quizCCTT.html">Power</option>
+    <option value="quizJJDD.html">Adventure</option>
+        <option value="quizJJDD.html">Friends</option>
+<select>
+<input id="GoButton" type=button value="Go" onclick="goToNewPage()"/>
+</html>

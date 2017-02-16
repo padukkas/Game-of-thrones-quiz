@@ -1,0 +1,31 @@
+<html>
+<title> Injured Soldier </title>
+<video playsinline autoplay loop id="bgvid">
+		    <source src="images/intro.mp4" type="video/mp4">
+		</video>
+<link href="about.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+
+<h1>You see a soldier injured, so you...</h1>
+
+<br>
+<br>
+<br>
+<br>
+
+<select name="list" id="list" accesskey="target">
+    <option value="cersei.html">Put him out of his misery</option>
+    <option value="cersei.html">Ignore him</option>
+    <option value="cersei.html">Laugh and walk away</option>
+        <option value="quizCTTT.html">Try and help him, but for a price</option>
+<select>
+<input type=button value="Go" onclick="goToNewPage()" />
+</html>

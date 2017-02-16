@@ -1,0 +1,31 @@
+<html>
+<title> Illegal Deal.... </title>
+<video playsinline muted autoplay loop id="bgvid">
+		    <source src="images/intro.mp4" type="video/mp4">
+		</video>
+<link href="about.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+
+<h1>You have been spotted doing an illegal deal, so you...</h1>
+
+<br>
+<br>
+<br>
+<br>
+
+<select name="list" id="list" accesskey="target">
+    <option value="tyrion.html">Find the person, and add him to your team</option>
+    <option value="quizCCCT.html">Kill the person</option>
+    <option value="tyrion.html">Bribe the person</option>
+        <option value="tyrion.html">Simply deny it ever happening</option>
+<select>
+<input type=button value="Go" onclick="goToNewPage()" />
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width; target-densitydpi=device-dpi;" />
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+
+	<title>Advanced Interfaces - Survey - Proposed Sheridan Post Grad Program</title>
+
+	<link href="about.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<header>
+        <h1>Game of thrones survey</h1>
+        <img id="logo" src="images/logo.png" alt="Game of thrones logo" />
+    </header>
+
+	<nav>
+	    <h1>Game of thrones Survey</h1>
+        <a href="index.html">Index</a>
+        <a href="about.html">About</a>
+        <a href="survey.html">Survey</a>
+    </nav>
+
+    <section id="question">
+    <h1>Survey</h1>
+
+    <form method="post" action="survey2.html">
+
+    <div class="questionHeading">Question 1.</div>
+		<br><p> Who is your favorite character </p>
+    <br>
+
+   <select name = "tried" id="tried" multiple size="6">
+       <option>Arya Stark</option>
+       <option>Sansa Stark</option>
+       <option>Tyrion Lanister</option>
+       <option>Cercie Lanister</option>
+			 <option>Jon Snow</option>
+			 <option>Daenerys Targaryen</option>
+   </select>
+
+   <textarea name="describe" id="describe" rows="8" cols="40" placeholder="What do you think of the character you chose?"></textarea>
+
+    </div>
+
+    <div class="question">
+    <div class="questionHeading">Question 2.</div>
+<br>
+		<br>On what date? (Some browsers show date picker)<br>
+    <br><input type="date" name = "date" id="date" />
+    </div>
+
+		<div class="questionHeading">Question 3.</div>
+    <p>Rate the tv show game of thrones with a number between 0-10 (10 is the heighest) </p>
+    <input type="number" name= "howfar"value="10" max="10" min="0" /><br>
+
+		<div class="questionHeading">Question 4.</div>
+		<br>How much spicy food can you handle?<br>
+    <br><input type="range" id="howfar" name= "howfar" value="10" max="100" min="0" step="10" /><br>
+
+		<div class="questionHeading">Question 5.</div>
+    <br>What is your favorite color? <br>
+    <br><input type="color" id="color" name = "color"/><br>
+
+		<div class="questionHeading">Question 6.</div>
+		<br>Are you going to help someone in need or just ignore them?<br>
+
+    <br><input type="radio" name="choice" value="yes" > Yes<br>
+    <br><input type="radio" name="choice" value="no" > No<br>
+
+    <div class="question">
+    <br><div class="questionHeading">Question 7.</div>
+    <br>
+   <table>
+   <tr><td align="left">Your Name:</td><td><input id="name" name="name" type="text" size="30" autocomplete required /></td></tr>
+   <tr><td align="left">Your City:</td><td><input id="city" name="city" type="text" size="30" list="cities" /></td></tr>
+   <tr><td align="left">Your E-mail:</td><td><input id="email" name="email" type="email" size="30" required /></td></tr>
+   <tr><td align="left">Postal Code:</td>
+   <td><input id="postal" type="text" pattern="^[A-Za-z]\d[A-Za-z][ ]?\d[A-Za-z]\d$" size="30" /></td></tr>
+   </table>
+
+   <datalist id="cities">
+       <option value="Oakville" />
+       <option value="London" />
+       <option value="Burlington" />
+       <option value="Toronto" />
+			 <option value="Whitby" />
+			 <option value="Wasaga Beach" />
+			 <option value="Richmond Hill" />
+   </datalist>
+
+    </div>
+
+    <input type="submit" name="submit" id="submit" value="submit" />
+
+
+    </form>
+    </section>
+
+    <footer>
+      <h3 id="copyright">&copy; GAME OF THRONES</h3>
+    </footer>
+
+</body>
+
+</html>

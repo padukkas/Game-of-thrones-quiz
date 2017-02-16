@@ -1,0 +1,32 @@
+<html>
+<title> Your Strength Are... </title>
+<video playsinline muted autoplay loop id="bgvid">
+		    <source src="images/intro.mp4" type="video/mp4">
+		</video>
+<link href="about.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+
+<h1>Your greatest strength is/are...</h1>
+
+<br>
+<br>
+<br>
+<br>
+
+<select name="list" id="list" accesskey="target">
+    <option value="snow.html">Your friends</option>
+    <option value="snow.html">Yourself</option>
+    <option value="snow.html">Your blade</option>
+        <option value="quizJDDD.html">Your strategies</option>
+<select>
+<input id= "Gobutton" type=button value="Go" onclick="goToNewPage()" />
+</html>
